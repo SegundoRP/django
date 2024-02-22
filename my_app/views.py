@@ -1,10 +1,10 @@
 from django.http import HttpResponse, JsonResponse
 from .models import Project, Task
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 
 # Create your views here.
 def index(request):
-    return HttpResponse('Index page')
+    return render(request, 'index.html')
 
 def hello(request, username):
     return HttpResponse('Hello %s' % username)
