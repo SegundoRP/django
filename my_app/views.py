@@ -11,8 +11,9 @@ def hello(request, username):
     return HttpResponse('Hello %s' % username)
 
 def projects(request):
-    records = list(Project.objects.values())
-    return JsonResponse(records, safe=False)
+    # records = list(Project.objects.values())
+    # return JsonResponse(records, safe=False)
+    projects = Project.objects.all()
 
 def tasks(request, id):
     # task = Task.objects.get(id=id)
