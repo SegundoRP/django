@@ -13,7 +13,8 @@ def hello(request, username):
 def projects(request):
     # records = list(Project.objects.values())
     # return JsonResponse(records, safe=False)
-    projects = Project.objects.all()
+    projects_objects = Project.objects.all()
+    return render(request, 'projects.html', { 'projects': projects_objects })
 
 def tasks(request, id):
     # task = Task.objects.get(id=id)
