@@ -1,7 +1,8 @@
 <nav>
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/projects">Projects</a></li>
+    {# <li><a href="/projects">Projects</a></li> cuando no tiene name parametewr la ruta seria asi #}
+    <li><a href="{% url 'projects' %}">Projects</a></li>
   </ul>
 </nav>
 
