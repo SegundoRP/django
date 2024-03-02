@@ -1,0 +1,10 @@
+body {
+  background: #202020;
+  color: whitesmoke;
+}
+
+.input {
+  background: wheat;
+  padding: 10px;
+  text-align: center;
+}
