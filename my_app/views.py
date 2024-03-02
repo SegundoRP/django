@@ -15,6 +15,7 @@ def projects(request):
     # records = list(Project.objects.values())
     # return JsonResponse(records, safe=False)
     projects_objects = Project.objects.all()
+    # tasks = Task.objects.filter(project_id=id)
     return render(request, 'projects.html', { 'projects': projects_objects })
 
 def tasks(request, id):
