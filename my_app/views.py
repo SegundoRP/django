@@ -29,4 +29,4 @@ def create_task(request):
     else:
         Task.objects.create(title=request.POST['title'],
         description=request.POST['description'], project_id=2)
-        return redirect('/projects/')
+        return redirect('projects') # esto es asi por el name parameter que le pasamos a su ruta projects sino seria '/projects/'
