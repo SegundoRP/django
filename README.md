@@ -30,3 +30,7 @@ python manage.py shell
 ```
 python manage.py createsuperuser
 ```
+### List all dependencies
+```
+pip freeze > requirements.txt
+```
