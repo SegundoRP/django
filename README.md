@@ -28,6 +28,10 @@ python manage.py migrate (optional: app_name)
 ```
 python manage.py shell
 ```
+### Django db shell 
+```
+python manage.py dbshell
+```
 ### Create superuser admin
 ```
 python manage.py createsuperuser
