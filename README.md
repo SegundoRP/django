@@ -36,3 +36,7 @@ python manage.py createsuperuser
 ```
 pip freeze > requirements.txt
 ```
+### Check all fields in a record in the shell (example)
+```
+Product.objects.first().__dict__
+```
